@@ -14,4 +14,4 @@ if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi
 echo 'set completion-ignore-case On' >> ~/.inputrc
 
 # basic installations
-sudo apt install tmux vim figlet
+sudo apt install -y tmux vim figlet
