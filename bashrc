@@ -116,6 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [[ -n "$PS1" ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
+        tmux attach-session || tmux new-session
+fi
+
 if which tmux >/dev/null 2>&1; then
     # if no session is started, start a new session
     test -z ${TMUX} && tmux
