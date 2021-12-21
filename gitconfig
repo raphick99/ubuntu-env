@@ -6,7 +6,9 @@
         d = diff
         p = push
         cm = commit -m
+        a = add
         ap = add -p
+        rp = restore -p
 [help]
         autocorrect = 20
 [user]
