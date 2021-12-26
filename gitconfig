@@ -16,3 +16,5 @@
         name = Raphael Ickovics
 [push]
         default = current
+[core]
+        editor = vim
